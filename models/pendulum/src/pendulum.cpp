@@ -12,8 +12,8 @@ int Pendulum::default_data(){
 	l1 = 1;
 	m2 = 1;
 	l2 = 1;
-	theta1 = 90 * M_PI/180;
-	theta2 = 0 * M_PI/180;
+	theta1 = 0 * M_PI/180;
+	theta2 = 20 * M_PI/180;
 	return 0;
 
 }
