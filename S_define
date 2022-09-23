@@ -1,0 +1,28 @@
+
+
+/************************************************************
+PURPOSE:
+    ( Simulate a double pendulum. )
+LIBRARY DEPENDENCIES:
+    ((pendulum/src/pendulum.cpp))
+*************************************************************/
+#include "sim_objects/default_trick_sys.sm"
+##include "pendulum/include/pendulum.h"
+class PendulumSimObject : public Trick::SimObject {
+    public:
+    Pendulum pendulum;
+    PendulumSimObject() {
+        ("default_data")     pendulum.default_data() ;
+        ("initialization")   pendulum.state_init() ;
+        ("derivative")       pendulum.state_deriv() ;
+        ("integration") trick_ret = pendulum.state_integ() ;
+    }
+};
+
+PendulumSimObject dyn;
+
+IntegLoop dyn_integloop (0.01) dyn;
+
+void create_connections() {
+    dyn_integloop.getIntegrator(Runge_Kutta_4, 4);
+}

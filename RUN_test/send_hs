@@ -1,0 +1,16 @@
+|L   0|2022/09/23,15:06:43|password| |T 0|20.000000| 
+     REALTIME SHUTDOWN STATS:
+            ACTUAL INIT TIME:        0.681
+         ACTUAL ELAPSED TIME:        0.721
+|L   0|2022/09/23,15:06:43|password| |T 0|20.000000| 
+SIMULATION TERMINATED IN
+  PROCESS: 0
+  ROUTINE: Executive_loop_single_thread.cpp:98
+  DIAGNOSTIC: Reached termination time
+
+       SIMULATION START TIME:        0.000
+        SIMULATION STOP TIME:       20.000
+     SIMULATION ELAPSED TIME:       20.000
+        ACTUAL CPU TIME USED:        0.687
+       SIMULATION / CPU TIME:       29.110
+     INITIALIZATION CPU TIME:        0.641
