@@ -37,3 +37,6 @@ equation.
 In state_integ(), we pass the state derivatives - which are the second derivative of both angles 
 as well as the first derivative - to the integrator. This allows us to calculate values for theta, 
 which can be used to calculate the x and y positions of the masses. 
+
+## Results 
+[Plot of the x and y positions of both masses](https://github.com/ibsal/trick-double-pendulum/blob/main/scripts/Figure_1.png)
