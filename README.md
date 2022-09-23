@@ -21,7 +21,7 @@ The simulation has 4 main functions: default_data(), state_init(), state_deriv()
 ### default_data()
 
 In default_data(), we set the values for the lengths of the pendulum rods, masses of the pendulums, 
-and the initial angles of the rodes measured from the vertical axis. 
+and the initial angles of the rods measured from the vertical axis. 
 
 ### state_init()
 
@@ -37,7 +37,7 @@ equation.
 ### state_integ()
 
 In state_integ(), we pass the state derivatives - which are the second derivative of both angles 
-as well as the first derivative - to the integrator. This allows us to calculate values for theta, 
+as well as the first derivatives - to the integrator. This allows us to calculate values for theta, 
 which can be used to calculate the x and y positions of the masses. 
 
 ## Results 
