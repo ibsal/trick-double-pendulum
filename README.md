@@ -1,6 +1,6 @@
-#Double Pendulum Simulation
+# Double Pendulum Simulation
 
-##Mechanics
+## Mechanics
 
 Because the double pendulum is difficult to represent using forces, the state derivatives 
 are calculated using functions derived from the Lagrangian of the system and the Euler-Lagrange equation.
@@ -12,27 +12,27 @@ for the second derivative of both angles. This becomes our state derivative for 
 
 ![The Euler-Lagrange equation](https://i.imgur.com/Bd2PtAF.png)
 
-##Simulation Structure
+## Simulation Structure
 
 The simulation has 4 main functions: default_data(), state_init(), state_deriv(), and state_integ().
 
-###default_data()
+### default_data()
 
 In default_data(), we set the values for the lengths of the pendulum rods, masses of the pendulums, 
 and the initial angles of the rodes measured from the vertical axis. 
 
-###state_init()
+### state_init()
 
 In state_init(), the initial x and y positions of the pendulum are derived from information set in 
 default_data(). 
 
-###state_deriv()
+### state_deriv()
 
 Here we first calculate the x and y positions of the pendulum for data recording purposes, than 
 we calculate the second derivative of both angles using the formula derived from the Euler-Lagrange 
 equation. 
 
-###state_integ()
+### state_integ()
 
 In state_integ(), we pass the state derivatives - which are the second derivative of both angles 
 as well as the first derivative - to the integrator. This allows us to calculate values for theta, 
