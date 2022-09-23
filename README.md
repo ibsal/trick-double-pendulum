@@ -12,6 +12,8 @@ writing the lagrangian in terms of the angles of the pendulum rods, the pendulum
 and the length of the rods, we can use the Euler-Lagrange equation to create a formula solving 
 for the second derivative of both angles. This becomes our state derivative for the simulation.
 
+Note that the mass of the rods, drag, and friction at the pendulum joints are not yet considered by the simulation.
+
 ## Simulation Structure
 
 The simulation has 4 main functions: default_data(), state_init(), state_deriv(), and state_integ().
@@ -30,7 +32,7 @@ default_data().
 
 Here we first calculate the x and y positions of the pendulum for data recording purposes, than 
 we calculate the second derivative of both angles using the formula derived from the Euler-Lagrange 
-equation. 
+equation.
 
 ### state_integ()
 
