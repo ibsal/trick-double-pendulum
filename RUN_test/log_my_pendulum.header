@@ -1,6 +1,0 @@
-log_my_pendulum byte_order is little_endian
-log_my_pendulum	double	     s	sys.exec.out.time
-log_my_pendulum	double	     m	dyn.pendulum.pos1[0]
-log_my_pendulum	double	     m	dyn.pendulum.pos1[1]
-log_my_pendulum	double	     m	dyn.pendulum.pos2[0]
-log_my_pendulum	double	     m	dyn.pendulum.pos2[1]
