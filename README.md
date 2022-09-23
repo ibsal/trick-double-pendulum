@@ -5,12 +5,12 @@
 Because the double pendulum is difficult to represent using forces, the state derivatives 
 are calculated using functions derived from the Lagrangian of the system and the Euler-Lagrange equation.
 
+![The Euler-Lagrange equation](https://i.imgur.com/Bd2PtAF.png)
+
 The Lagrangian is defined as the kinetic energy of the system minus its potential energy. By 
 writing the lagrangian in terms of the angles of the pendulum rods, the pendulum's mass,
 and the length of the rods, we can use the Euler-Lagrange equation to create a formula solving 
 for the second derivative of both angles. This becomes our state derivative for the simulation.
-
-![The Euler-Lagrange equation](https://i.imgur.com/Bd2PtAF.png)
 
 ## Simulation Structure
 
@@ -42,4 +42,4 @@ which can be used to calculate the x and y positions of the masses.
 
 The plot below was created with masses of 1 kg each, rod lengths of 1 m each, theta1 at 0 degrees
 and theta2 at 20 degrees. 
-[Plot of the x and y positions of both masses](https://github.com/ibsal/trick-double-pendulum/blob/main/scripts/Figure_1.png)
+![Plot of the x and y positions of both masses](https://github.com/ibsal/trick-double-pendulum/blob/main/scripts/Figure_1.png)
