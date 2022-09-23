@@ -42,7 +42,7 @@ which can be used to calculate the x and y positions of the masses.
 
 ## Results 
 
-The plot below was created with masses of 1 kg each, rod lengths of 1 m each, theta1 at 0 degrees
-and theta2 at 20 degrees, and a total time of 20 seconds. 
+The plot below was created with masses of 1 kg each, rod lengths of 1 m each, theta1 at 0 degrees, 
+theta2 at 20 degrees, and a total time of 20 seconds. 
 
 ![Plot of the x and y positions of both masses](https://github.com/ibsal/trick-double-pendulum/blob/main/scripts/Figure_1.png)
